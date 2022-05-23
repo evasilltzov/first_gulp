@@ -20,7 +20,7 @@ function scss() {
     return src('src/scss/**.scss')
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: ['last 2 versions']
+            overrideBrowserslist: ['last 2 versions']
         }))
         .pipe(csso())
         .pipe(concat('index.css'))
