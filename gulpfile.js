@@ -28,7 +28,7 @@ function scss() {
 }
 
 function clear() {
-    return del('dist')
+    return del(['dist/!css'] , ['dist/!images'])
 }
 
 async function serve() {
